@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Robot_remote</string>
+
+    <color name="data_color">#76B6EA</color>
+    <color name="button_color">#576171</color>
+    <color name="data_name">#EDF1F4</color>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wifi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TCP服务端配置"
+            android:textSize="22dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!-- 监听端口号 -->
+            <TextView
+                android:id="@+id/port_TextView"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="监听的端口：" />
+            <!-- 端口号 -->
+            <EditText
+                android:id="@+id/port_EditText"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="8080" />
+
+            <!-- 启动按钮 -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!-- IP地址 -->
+            <TextView
+                android:id="@+id/ip_TextView"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="服务器的IP：" />
+            <!-- IP -->
+            <TextView
+                android:id="@+id/ip_Text"
+                android:layout_width="201dp"
+                android:textSize="19sp"
+                android:gravity="center_vertical"
+                android:layout_height="44dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="启动服务" />
+
+        <Button
+            android:id="@+id/return_button"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="返回" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

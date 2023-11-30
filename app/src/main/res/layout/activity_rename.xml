@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".rename">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按键设置"
+        android:textSize="40dp"
+        android:gravity="center_horizontal">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按键号："
+            android:textSize="30dp"
+            android:layout_marginLeft="20dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/buttonname"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按键名："
+            android:textSize="30dp"
+            android:layout_marginLeft="20dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/Stringname"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/startbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/continuebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="继续编辑"
+            android:textSize="25dp"
+            android:layout_marginLeft="200dp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/endbotton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束编辑"
+            android:textSize="25dp"
+            android:layout_marginLeft="250dp"
+            >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
